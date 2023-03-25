@@ -9,12 +9,15 @@
     justify-content: center;
     padding-bottom: 40px;
 }
+#ServiceForm{
+    padding-bottom:20px;
+}
 #ServiceForm a {
     color: #0c376f;
-    text-decoration:none;
-    font-weight:bold;
+    text-decoration: none;
+    font-weight: bold;
 }
-.step1 .container, .step2 .container, .step3 .container {
+.step1 .container, .step2-1 .container, .step3 .container {
     min-height: 63vh;
 }
 .Success .container {
@@ -125,7 +128,7 @@
     background-color: #eae9e9;
 }
 .font-14 {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 .font-15{
     font-size:15px;
@@ -149,11 +152,11 @@
     color: #ffffff;
     background-color: #2b598a !important;
     border-color: #2b598a !important;
-    border-radius:7px;
+    border-radius:5px;
     font-size:15px;
 }
 
-.step1 input[type=checkbox] {
+.step1 input[type=checkbox], .role-check input[type=checkbox] {
     position: relative;
     border: 2px solid #0c376f;
     border-radius: 2px;
@@ -179,7 +182,7 @@
     opacity: 1;
 }
 
-.step1 input[type=checkbox]:before {
+.step1 input[type=checkbox]:before, .role-check input[type=checkbox]:before {
     content: '';
     position: absolute;
     right: 50%;
@@ -191,6 +194,12 @@
     margin: -1px -1.4px 0 -1px;
     transform: rotate(45deg) translate(-50%, -50%);
     z-index: 2;
+}
+
+.role-check input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #bbbbbb;
 }
 /*滑動開關*/
 .form-switch .form-check-input {
