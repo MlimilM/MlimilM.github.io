@@ -1,0 +1,155 @@
+﻿.ServiceContainer{
+    height: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.step1 .container, .step2 .container, .step3 .container, .info .container {
+    height: calc(100% - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+.notify-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+    font-size: 15px;
+    color: #636363;
+}
+
+.stop-section {
+    text-align: center;
+    padding: 10px 30px;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+}
+
+.collapse.show {
+    display: grid;
+}
+.bg-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c376f;
+    height: 70px;
+}
+
+.bg-gray {
+    background-color: #eae9e9;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.hr-bold {
+    border: 1px solid #b2b2b2;
+}
+
+.text-blue {
+    color: #0c376f;
+}
+
+.border-right {
+    border-right: 1px solid #cfd4da;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #cfd4da;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #2b598a !important;
+    border-color: #2b598a !important;
+    font-size: 15px;
+}
+
+.step3 input[type=checkbox] {
+    position: relative;
+    border: 2px solid #0c376f;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 0.6em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 23px;
+    width: 23px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+.step3 .border-bottom label{
+    margin-bottom:0;
+}
+input[type=checkbox]:hover {
+    opacity: 1;
+}
+
+input[type=checkbox]:checked {
+    background-color: #0c376f;
+    opacity: 1;
+}
+
+.step3 input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 6px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1.4px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+}
+
+/*維修項目*/
+ul.fixed_list li {
+    list-style-type: none;
+}
+input[type="checkbox"].fixed_style + label {
+    width: 32%;
+}
+input[type="checkbox"].fixed_style {
+    display:none;
+}
+input[type="checkbox"].fixed_style + label {
+    color: #1e356f;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #1e356f;
+    display: block;
+    width: auto;
+    float: left;
+    padding: 7px 10px;
+    text-align: center;
+    margin: 0% 2% 2% 0%;
+    cursor: pointer;
+}
+input[type="checkbox"].fixed_style:checked + label {
+    background-color: #38578a;
+    border: 1px solid #38578a;
+    color: #fff;
+}
